@@ -6,12 +6,14 @@ import {
   Post,
   Patch,
   Delete,
+  Query,
 } from '@nestjs/common';
 
 @Controller('coffees')
 export class CoffeesController {
   @Get()
-  findAll() {
+  findAll(@Query('limit') limit: string, @Query('offset') offset: string) {
+    console.log(`limit: ${limit} - offset: ${offset}`);
     return 'This action returns all coffees.';
   }
 
