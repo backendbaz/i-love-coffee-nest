@@ -11,6 +11,7 @@ Brewing perfect endpoints for coffee lovers and developers alike, built with the
 - Modular and maintainable architecture
 - Using Services to isolate business logic
 - Using Dependency Injection (DI)
+- Send user-friendly error messages
 
 # 🛠️ Project Setup
 
