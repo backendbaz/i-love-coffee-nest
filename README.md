@@ -12,6 +12,7 @@ Brewing perfect endpoints for coffee lovers and developers alike, built with the
 - Using Services to isolate business logic
 - Using Dependency Injection (DI)
 - Send user-friendly error messages
+- Validate Input Data with Pipes and Data Transfer Objects (DTOs)
 
 # 🛠️ Project Setup
 
