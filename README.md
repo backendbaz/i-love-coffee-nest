@@ -13,6 +13,7 @@ Brewing perfect endpoints for coffee lovers and developers alike, built with the
 - Using Dependency Injection (DI)
 - Send user-friendly error messages
 - Validate Input Data with Pipes and Data Transfer Objects (DTOs)
+- Using Mapped Types to avoid Code Duplication
 
 # 🛠️ Project Setup
 
