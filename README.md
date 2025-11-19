@@ -9,6 +9,8 @@ Brewing perfect endpoints for coffee lovers and developers alike, built with the
 
 - Complete CRUD operations
 - Modular and maintainable architecture
+- Using Services to isolate business logic
+- Using Dependency Injection (DI)
 
 # 🛠️ Project Setup
 
