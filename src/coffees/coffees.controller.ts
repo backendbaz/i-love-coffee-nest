@@ -24,25 +24,21 @@ export class CoffeesController {
 
   @Get(':id')
   findOne(@Param('id') id: number) {
-    console.log(typeof id);
-    return this.coffeesService.findOne(id + '');
+    return this.coffeesService.findOne(id);
   }
 
   @Post()
   create(@Body() createCoffeeDto: CreateCoffeeDto) {
-    console.log(createCoffeeDto instanceof CreateCoffeeDto);
-    console.log(createCoffeeDto);
     return this.coffeesService.create(createCoffeeDto);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCoffeeDto: UpdateCoffeeDto) {
-    console.log(updateCoffeeDto);
+  update(@Param('id') id: number, @Body() updateCoffeeDto: UpdateCoffeeDto) {
     return this.coffeesService.update(id, updateCoffeeDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  remove(@Param('id') id: number) {
     return this.coffeesService.remove(id);
   }
 }
