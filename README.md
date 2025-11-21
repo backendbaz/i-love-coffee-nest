@@ -28,6 +28,12 @@ Brewing perfect endpoints for coffee lovers and developers alike, built with the
 pnpm install
 ```
 
+# 🐳 Running Databases
+
+```bash
+docker-compose up -d
+```
+
 # 🔄 Compile and Run the project
 
 ```bash
