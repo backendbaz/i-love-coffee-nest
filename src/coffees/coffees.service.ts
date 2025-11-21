@@ -40,6 +40,12 @@ export class CoffeesService {
     return coffee;
   }
 
+  async recommend(id: number) {
+    const coffee = await this.findOne(id);
+    await this.recommendCoffee(coffee);
+    return { message: `Coffee #${id} recommended successfully!` };
+  }
+
   async create(createCoffeeDto: CreateCoffeeDto) {
     const flavors = await Promise.all(
       createCoffeeDto.flavors.map((name) => this.preloadFlavorByName(name)),
@@ -73,7 +79,7 @@ export class CoffeesService {
     return this.coffeeRepository.remove(coffee);
   }
 
-  async recommendCoffee(coffee: Coffee) {
+  private async recommendCoffee(coffee: Coffee) {
     const queryRunner = this.dataSource.createQueryRunner();
     await queryRunner.connect();
     await queryRunner.startTransaction();
