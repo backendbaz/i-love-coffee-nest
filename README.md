@@ -14,6 +14,13 @@ Brewing perfect endpoints for coffee lovers and developers alike, built with the
 - Send user-friendly error messages
 - Validate Input Data with Pipes and Data Transfer Objects (DTOs)
 - Using Mapped Types to avoid Code Duplication
+- Storing data in PostgreSQL using TypeORM
+- Using Repository to access database
+- Retrieve entities with their Relations
+- Using Cascading Inserts and Updates
+- Use Transactions
+- Adding Indexes to entities
+- Setting up Migrations
 
 # 🛠️ Project Setup
 
